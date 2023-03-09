@@ -18,14 +18,28 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: const Text("Aplicativo Scaffold")),
-        body: const Center(
-          child: Text(
-            "Meu Aplicativo",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 30,
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Center(
+              child: Text(
+                "Meu Aplicativo",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
             ),
-          ),
+            Center(
+              child: Text(
+                "Teste",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
